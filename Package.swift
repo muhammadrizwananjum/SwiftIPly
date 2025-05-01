@@ -32,18 +32,12 @@ let package = Package(
             name: "SwiftIPly",
             dependencies: [],
             path: "Sources/SwiftIPly",
-            resources: [],
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
+            resources: []
         ),
         .testTarget(
             name: "SwiftIPlyTests",
             dependencies: ["SwiftIPly"],
-            path: "Tests/SwiftIPlyTests",
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
+            path: "Tests/SwiftIPlyTests"
         )
         // Uncomment this block if you later want to add an example executable target
         /*

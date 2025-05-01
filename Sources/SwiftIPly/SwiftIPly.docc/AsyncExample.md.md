@@ -1,7 +1,7 @@
 # Async/Await Usage
 
 ```swift
-import IPly
+import SwiftIPly
 
 // Basic usage
 Task {
