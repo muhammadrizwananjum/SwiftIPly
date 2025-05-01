@@ -32,12 +32,9 @@ let package = Package(
             name: "SwiftIPly",
             dependencies: [],
             path: "Sources/SwiftIPly",
-            resources: [
-                    .copy("SwiftIPly.docc")
-                ],
+            resources: [],
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency"),
-                .unsafeFlags(["-warn-concurrency"], .when(configuration: .debug))
+                .enableExperimentalFeature("StrictConcurrency")
             ]
         ),
         .testTarget(
